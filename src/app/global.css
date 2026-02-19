@@ -1,0 +1,98 @@
+:root {
+	--main-color: gainsboro;
+	--secondary-color: #444444;
+	--secondary-color-hover: #555555;
+	--max-width: 45em;
+	--min-width: 2em;
+  }
+
+
+body{
+	font-family: sans-serif;
+	color: var(--secondary-color);
+	background-color: var(--main-color);
+	
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0;
+	margin-top: 0;
+	
+	line-height: 1.5em;
+}
+
+h1{
+	font-size: 240%;
+	text-align: center;
+	line-height: 1em;
+}
+
+h2{
+	border-bottom: 0.15em solid var(--secondary-color);
+}
+
+a:link{
+	color: var(--secondary-color);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover{
+	color: var(--secondary-color);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:active{
+	color: var(--secondary-color);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:visited{
+	color: var(--secondary-color);
+	font-weight: bold;
+}
+
+ul li{
+	padding-bottom: 0.5em;
+}
+
+img {
+	filter: drop-shadow(0 0 0.75rem grey)
+}
+
+em{
+	font-style: normal;
+	font-weight: bold;
+}
+
+#nav_bar{
+	padding: 0;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* ✅ Allow items to wrap */
+  justify-content: center; /* ✅ Keep items centered */
+  gap: 0.5em; /* ✅ Add spacing between items */
+}
+
+#nav_bar li{
+	display:inline;
+	text-align: center;
+	margin:0;
+	
+}
+
+@media only screen and (max-width:500px){
+	h1{
+		font-size: 200%;
+	}
+
+	#nav_bar li{
+		display:inline;
+		text-align: center;
+		margin:0;
+		white-space: nowrap;
+		font-size: 110%;
+	}
+}

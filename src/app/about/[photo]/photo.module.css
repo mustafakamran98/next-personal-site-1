@@ -1,0 +1,10 @@
+.photo_div {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+.photo {
+	border-radius: 10px;
+}

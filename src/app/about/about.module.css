@@ -1,0 +1,68 @@
+.avatar{
+	float: right;
+	max-height: 10em;
+	width:10em;
+	height: 10em;
+	margin-left: 3em;
+	border-radius: 50%;
+}
+
+.bio{
+	padding-bottom: 2em;
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.cat{
+	float: right;
+	max-height: 10em;
+	margin-left: 3em;
+	border-radius: 50%;
+}
+
+.cat_li{
+	padding-bottom: 2em;
+	content: "";
+  	clear: both;
+  	display: table;
+}
+
+
+@media only screen and (max-width:500px){
+	.avatar{
+		float: none;
+		display: block;
+		align-content: center;
+		/*max-height: 15em;
+		height: 15em;
+		width:15em;*/
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+		clear: both;
+		margin-bottom:1em;
+	}
+	
+	.cat{
+		margin-top: 4em;
+		float: none;
+		display: block;
+		align-content: center;
+		max-height: 20em;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+		clear: both;
+		margin-bottom:1em;
+	}
+
+	.cat_ul{
+		padding-left: 0;
+	}
+
+	.cat_li{
+		padding-bottom: 2em;
+		
+	}
+}
